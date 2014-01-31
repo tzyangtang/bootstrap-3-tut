@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="mainApp">
     <head>
         <title>Bootstrap 101 Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -26,11 +26,11 @@
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">
-                            <a href="index.html">Home</a>
+                            <a href="#">Home</a>
                         </li>
                          
                         <li>
-                            <a href="article.html">Blog</a>
+                            <a href="#/article">Blog</a>
                         </li>
                          
                         <li class="dropdown">
@@ -62,58 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="jumbotron text-center">
-                <h1>Hello, World!</h1>
-                <p>Etiam suscipit dictum molestie. Maecenas lobortis quam nisi, non auctor risus ultricies in. Sed nisi
-                   nunc, vestibulum eget vulputate vitae, condimentum eget massa. Mauris semper mollis velit et lacinia.
-                   Fusce vel lacus neque. Sed pellentesque arcu sed blandit aliquet. Aenean pharetra ligula ac arcu
-                   facilisis tempus.</p>
-                <a class="btn btn-default">Watch Now!</a>
-                 
-                <a class="btn btn-info">Twitter</a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>
-                        <a href="#">$500 Gaming PC Bild</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus, lorem ac malesuada
-                       aliquam, velit odio lobortis nunc, id interdum nulla tellus sed lectus. Duis id nibh ligula.
-                       Vestibulum vitae velit orci.</p>
-                    <a href="#" class="btn btn-default">Read More</a>
-                </div>
-                <div class="col-md-3">
-                    <h3>
-                        <a href="#">$500 Gaming PC Bild</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus, lorem ac malesuada
-                       aliquam, velit odio lobortis nunc, id interdum nulla tellus sed lectus. Duis id nibh ligula.
-                       Vestibulum vitae velit orci.</p>
-                    <a href="#" class="btn btn-default">Read More</a>
-                </div>
-                <div class="col-md-3">
-                    <h3>
-                        <a href="#">$500 Gaming PC Bild</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus, lorem ac malesuada
-                       aliquam, velit odio lobortis nunc, id interdum nulla tellus sed lectus. Duis id nibh ligula.
-                       Vestibulum vitae velit orci.</p>
-                    <a href="#" class="btn btn-default">Read More</a>
-                </div>
-                <div class="col-md-3">
-                    <h3>
-                        <a href="#">$500 Gaming PC Bild</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus, lorem ac malesuada
-                       aliquam, velit odio lobortis nunc, id interdum nulla tellus sed lectus. Duis id nibh ligula.
-                       Vestibulum vitae velit orci.</p>
-                    <a href="#" class="btn btn-default">Read More</a>
-                </div>
-            </div>
-        </div>
+        <div data-ng-view=""></div>
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <p class="navbar-text pull-left">Site Built by Neil Rowe</p>
@@ -157,9 +106,14 @@
                 </div>
             </div>
         </div>
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <!-- App libs -->
+        <script src="app/app.js"></script>
+        <script src="app/controllers/controllers.js"></script>
     </body>
 </html>
