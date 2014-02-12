@@ -1,5 +1,5 @@
 angular.module('ngTranslate', [], ['$provide', function ($provide) {
     $provide.value('$translate', {
-        "HOME": "首頁"
+        "HOME": "Home blah"
     });
 }]);
