@@ -35,6 +35,11 @@ app.config(function ($routeProvider) {
                 controller: 'SingleController',
                 templateUrl: '/app/partials/article.html'
             })
+        .when('/info',
+            {
+                controller: 'SingleController',
+                templateUrl: '/app/partials/info.html'
+            })
         .otherwise({ redirectTo: '/' });
 });
 
